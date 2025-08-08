@@ -17,7 +17,7 @@ concurrency:
 jobs:
   lint-and-review-docs:
     # do not run on PRs in forks
-    if: github.repository == 'mdn/translated-content'
+    if: github.repository == 'argl/translated-content'
     runs-on: ubuntu-latest
 
     steps:
