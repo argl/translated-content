@@ -52,6 +52,8 @@ jobs:
             echo "HAS_FILES=false" >> "$GITHUB_OUTPUT"
           fi
 
+          cat $GITHUB_OUTPUT
+
       - name: Checkout HEAD
         if: steps.check.outputs.HAS_FILES == 'true'
         uses: actions/checkout@v4
